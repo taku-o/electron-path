@@ -1,0 +1,34 @@
+{
+  "name": "electron-path",
+  "version": "0.1.0",
+  "description": "npm module to get electron path.",
+  "main": "path.js",
+  "types": "types.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint *.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:taku-o/electron-path.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "homepage": "https://github.com/taku-o/electron-path",
+  "bugs": {
+    "url": "https://github.com/taku-o/electron-path/issues",
+    "email": "mail@nanasi.jp"
+  },
+  "author": "taku-o <mail@nanasi.jp> (http://nanasi.jp/)",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.11.7",
+    "electron": "^1.8.8",
+    "eslint": "^5.6.1",
+    "typescript": "^3.1.3",
+    "typescript-eslint-parser": "^18.0.0"
+  }
+}
