@@ -17,8 +17,7 @@ npm install --save git+https://github.com/taku-o/electron-path#master
 As a node module:
 
 ```js
-const EPath = require('electron-path').EPath;
-const epath = new EPath();
+const epath = require('electron-path');
 
 const packagePath = epath.getAppPackageDir();
 const unpackedPath = epath.getUnpackedPath();

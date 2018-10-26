@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "npm module to get electron path.",
   "main": "path.js",
-  "types": "types.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint *.ts",
