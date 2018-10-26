@@ -1,5 +1,5 @@
 declare namespace ElectronPath {
-  interface IPath {
+  interface IEPath {
     readonly app: any;
     readonly appPath: string;
     unpackedPath: string;
@@ -8,7 +8,7 @@ declare namespace ElectronPath {
     getAppPackageDir(): string;
   }
 
-  class Path implements IPath {
+  class EPath implements IEPath {
     constructor();
     readonly app: any;
     readonly appPath: string;

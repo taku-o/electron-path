@@ -3,7 +3,8 @@ electron-path -- npm module to get electron path.
 
 ## Description
 
-get electron path.
+get electron application path,
+or get unpackedPath.
 
 ## Install
 
@@ -16,7 +17,10 @@ npm install --save git+https://github.com/taku-o/electron-path#master
 As a node module:
 
 ```js
-const epath = require('electron-path');
+const EPath = require('electron-path').EPath;
+const epath = new EPath();
+
 const packagePath = epath.getAppPackageDir();
+const unpackedPath = epath.getUnpackedPath();
 ```
 

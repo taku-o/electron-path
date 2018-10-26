@@ -2,7 +2,7 @@
 const electron = require('electron');
 var _path, path = () => { _path = _path || require('path'); return _path; };
 
-export class Path implements ElectronPath.IPath {
+export class EPath implements ElectronPath.IEPath {
   app: any;
   appPath: string;
   unpackedPath: string;
