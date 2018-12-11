@@ -7,10 +7,9 @@ const appPath = app.getAppPath();
 
 let unpackedPath:string;
 export function getUnpackedPath(): string {
-  //unpackedPath = unpackedPath || app.isPackaged?
-  //  appPath.replace('app.asar', 'app.asar.unpacked'):
-  //  appPath;
-  unpackedPath = unpackedPath || appPath.replace('app.asar', 'app.asar.unpacked');
+  unpackedPath = unpackedPath || app.isPackaged?
+    appPath.replace('app.asar', 'app.asar.unpacked'):
+    appPath;
   return unpackedPath;
 }
 

@@ -6,10 +6,9 @@ var app = electron.app || electron.remote.app;
 var appPath = app.getAppPath();
 var unpackedPath;
 function getUnpackedPath() {
-    //unpackedPath = unpackedPath || app.isPackaged?
-    //  appPath.replace('app.asar', 'app.asar.unpacked'):
-    //  appPath;
-    unpackedPath = unpackedPath || appPath.replace('app.asar', 'app.asar.unpacked');
+    unpackedPath = unpackedPath || app.isPackaged ?
+        appPath.replace('app.asar', 'app.asar.unpacked') :
+        appPath;
     return unpackedPath;
 }
 exports.getUnpackedPath = getUnpackedPath;
