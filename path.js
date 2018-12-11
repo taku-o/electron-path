@@ -6,7 +6,7 @@ var app = electron.app || electron.remote.app;
 var appPath = app.getAppPath();
 var unpackedPath;
 function getUnpackedPath() {
-    unpackedPath = unpackedPath || app.isPackaged ?
+    unpackedPath = unpackedPath || app.isPackaged() ?
         appPath.replace('app.asar', 'app.asar.unpacked') :
         appPath;
     return unpackedPath;
@@ -14,7 +14,7 @@ function getUnpackedPath() {
 exports.getUnpackedPath = getUnpackedPath;
 var appPackageDir;
 function getAppPackageDir() {
-    appPackageDir = app.isPackaged ?
+    appPackageDir = app.isPackaged() ?
         path().dirname(path().dirname(path().dirname(appPath))) :
         appPath;
     return appPackageDir;
