@@ -7,7 +7,7 @@ const appPath = app.getAppPath();
 
 let unpackedPath:string;
 export function getUnpackedPath(): string {
-  unpackedPath = unpackedPath || app.isPackaged()?
+  unpackedPath = unpackedPath || app.isPackaged?
     appPath.replace('app.asar', 'app.asar.unpacked'):
     appPath;
   return unpackedPath;
@@ -15,7 +15,7 @@ export function getUnpackedPath(): string {
 
 let appPackageDir:string;
 export function getAppPackageDir(): string {
-  appPackageDir = app.isPackaged()?
+  appPackageDir = app.isPackaged?
     path().dirname(path().dirname(path().dirname(appPath))):
     appPath;
   return appPackageDir;
