@@ -21,7 +21,12 @@
     "email": "mail@nanasi.jp"
   },
   "author": "taku-o <mail@nanasi.jp> (http://nanasi.jp/)",
-  "license": "ISC",
+  "license": "MIT",
+  "files": [
+    "README.md",
+    "package.json",
+    "path.js"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.11.7",
