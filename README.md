@@ -9,7 +9,7 @@ or get unpackedPath.
 ## Install
 
 ```bash
-npm install --save git+https://github.com/taku-o/electron-path#master
+npm install @taku-o/electron-path
 ````
 
 ## Usage
@@ -17,7 +17,7 @@ npm install --save git+https://github.com/taku-o/electron-path#master
 As a node module:
 
 ```js
-const epath = require('electron-path');
+const epath = require('@taku-o/electron-path');
 
 const packagePath = epath.getAppPackageDir();
 const unpackedPath = epath.getUnpackedPath();
