@@ -1,6 +1,6 @@
 {
-  "name": "electron-path",
-  "version": "0.1.0",
+  "name": "@taku-o/electron-path",
+  "version": "0.1.1",
   "description": "npm module to get electron path.",
   "main": "path.js",
   "scripts": {
@@ -10,7 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:taku-o/electron-path.git"
+    "url": "git://github.com/taku-o/electron-path.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "electron"
